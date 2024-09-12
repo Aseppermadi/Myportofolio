@@ -3,6 +3,7 @@ import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 import { logo } from "../../public";
 import Image from "next/image";
+import ThemeSwitcher from './ThemeSwitcher'
 
 
 export default function NavbarHome(){
@@ -25,6 +26,7 @@ export default function NavbarHome(){
                 <NavbarItem>
                     <Link color="foreground" href="#">Converter</Link>
                 </NavbarItem>
+                <ThemeSwitcher/>
             </NavbarContent>
             
             
