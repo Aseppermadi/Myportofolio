@@ -8,12 +8,13 @@ import ThemeSwitcher from './ThemeSwitcher'
 
 export default function NavbarHome(){
     return (
-        <Navbar shouldHideOnScroll> 
+        <Navbar shouldHideOnScroll className="bg-slate-400"> 
             <NavbarBrand>
                 <Image src={logo} alt="logo portofolio" width={56} height={60} />
                 <p className="font-bold text-inherit">Asep permadi</p>
             </NavbarBrand>
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            
+            <NavbarContent className="flex justify-between  gap-4" justify="center">
                 <NavbarItem>
                     <Link color="foreground" href="#">Home</Link>
                 </NavbarItem>
@@ -26,9 +27,9 @@ export default function NavbarHome(){
                 <NavbarItem>
                     <Link color="foreground" href="#">Converter</Link>
                 </NavbarItem>
-                <ThemeSwitcher/>
+               
             </NavbarContent>
-            
+             <ThemeSwitcher/>
             
         </Navbar>
     )
